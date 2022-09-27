@@ -1,0 +1,149 @@
+:root{
+    --blue-color:#0075ff;
+    --blue-alt-color:#0d69d6;
+    --orange-color:#f59e0b;
+    --green-color:#22c55e;
+    --red-color:#f44336;
+    --blue-color:#0075ff;
+    --gray-color:#888;
+}
+/* start box flex and grid  */
+.d-flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+.d-grid{
+    display: grid;
+}
+.gap-20{
+    gap: 20px;
+}
+/* padding and margin  */
+.p-10{
+    padding: 10px;
+}
+.p-15{
+    padding: 20px;
+}
+.p-20{
+    padding: 15px;
+}
+.m-20{
+    margin: 20px;
+}
+.m-0{
+    margin: 0;
+}
+.mt-0{
+    margin-top: 0;
+}
+.mt-5{
+    margin-top: 5px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+@media(max-width:767px){
+    .block-mobile{
+        display: block;
+    }
+}
+.d-block{
+    display: block ;
+}
+/* colors */
+.bg-white{
+    background-color: white;
+}
+.bg-eee{
+    background-color: #eee;
+}
+.bg-blue{
+    background-color: var(--blue-color);
+}
+.c-black{
+    color: black;
+}
+.c-white{
+    color: white;
+}
+.c-gray{
+    color: gray;
+}
+/* position */
+.p-relative{
+    position: relative;
+}
+/* text font */
+.txt-c{
+    text-align: center;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-15{
+    font-size: 15px;
+}
+
+@media(max-width:767px){
+    .text-c-mobile{
+        text-align: center;
+    }
+}
+/* borders */
+.b-none{
+    border: none;
+}
+.rad-6{
+    border-radius: 6px;
+}
+.rad-10{
+    border-radius: 10px;
+}
+
+/* mobile  */
+@media(max-width:767px){
+    .hidemobile{
+        display: none;
+    }
+    .hide-in-mobile{
+        display: none;
+    }
+}
+
+/* width and heights  */
+.w-full{
+    width: 100%;
+}
+.w-fitt{
+    width: fit-content;
+}
+/* conponenets  */
+.center-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.between-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.space-between{
+    justify-content: space-between;
+}
+.btn-shape{
+    padding: 4px 10px;
+    border-radius: 6px;
+}
