@@ -15,13 +15,13 @@
             <h3 class="p-relative txt-c mt-0">amine</h3>
             <ul class="p-0 list-none">
                 <li>
-                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                    <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
                         <i class="fa-solid fa-chart-line fa-fw"></i>
                         <span class="hidemobile">Dashboard</span>
                     </a>
                 </li>
                 <li>
-                    <a class=" actived-flex align-center fs-14 c-black rad-6 p-10" href="setting.html">
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="setting.html">
                         <i class="fa-solid fa-gear"></i>
                         <span class="hidemobile">Settings</span>
                     </a>
@@ -64,6 +64,7 @@
                 </li>
             </ul>
         </div>
+
         <div class="content w-full">
             <!-- heading -->
             <div class="head bg-white p-15 between-flex">
@@ -78,12 +79,165 @@
                 </div>
             </div>
             <h1 class="p-relative">Settings</h1>
-            <div class="setting-page"></div>
-            <label>
-                <input type="checkbox" name="" class="toggle" >
-                <div class="toggle-switch"></div>
-            </label>
-            
+            <div class="settings-page m-20 d-grid gap-20">
+
+                <div class="p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-20">Site controle</h2>
+                    <p class="mt-0 mb-20 c-gray fs-15"> controle the website if there is maintenance</p>
+                    <div class="mb-15 between-flex ">
+                        <div>
+                            <span>Website controle</span>
+                            <p class="c-gray mt-5 mb-0 fs-13">Open/Close website and type the reason</p>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" checked class="toggle-checkbox" id="">
+                                <div class="toggle-switch"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <textarea class="close-message p-10 rad-6 d-block w-full" placeholder="close message content"></textarea>
+                </div>
+
+                <div class="p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-20">General info</h2>
+                    <p class="mt-0 mb-20 c-gray fs-15"> General infos about your website</p>
+                    <div class="mb-15"> 
+                        <label for="first" class="fs-14 c-black d-block mb-10">First name</label>
+                        <input type="text" class="b-none p-10 rad-6 d-block w-full border-ccc" id="first" placeholder="first name">
+                    </div>
+                    <div class=" mb-15"> 
+                        <label for="last" class="fs-14 c-black d-block mb-10">last name</label>
+                        <input type="text" class="b-none p-10 rad-6 d-block w-full border-ccc" id="last" placeholder="first name">
+                    </div>
+                    <div class=""> 
+                        <label for="email" class="fs-14 c-black d-block mb-10">Email</label>
+                        <input type="email" disabled class="email b-none p-10 rad-6 d-block w-full border-ccc" id="email" placeholder="first name">
+                        <a href="#" class="">Change</a>
+
+                    </div>
+                </div>
+
+                <div class="p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-20">Site controle</h2>
+                    <p class="mt-0 mb-20 c-gray fs-15"> controle the website if there is maintenance</p>
+                    <div class="mb-15 ">
+                        <div>
+                            <span>Security info</span>
+                            <p class="c-gray mt-5 mb-0 fs-13">Security information about your account</p>
+                            <div class="sec-box mb-15 between-flex">
+                                <div>
+                                    <span>Password</span>
+                                    <p class="c-gray fs-13 mt-5 mb-0">Last change on 22/9/2022</p>
+                                </div>
+                                <a href="#" class="btn-shape bg-blue c-white">Change password</a>
+                            </div>
+
+                            <div class="sec-box mb-15 between-flex">
+                                <div>
+                                    <span>Two function authentification</span>
+                                    <p class="c-gray fs-13 mt-5 mb-0">Enable / Disabled</p>
+                                </div>
+                                <div class="setting-page">
+                                    <label>
+                                        <input type="checkbox" checked class="toggle-checkbox" id="">
+                                        <div class="toggle-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="sec-box mb-15 between-flex">
+                                <div>
+                                    <span>Devices</span>
+                                    <p class="c-gray fs-13 mt-5 mb-0">check the login devices list</p>
+                                </div>
+                                <a href="#" class="bg-eee c-black btn-shape">Devices list</a>
+                            </div>
+                            
+                            </div>
+
+
+                        </div>
+                </div>
+
+                <div class="social-boxes p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-20">Social info</h2>
+                    <p class="mt-0 mb-20 c-gray fs-15"> Security media information</p>
+                    <div class="d-flex align-center mb-15">
+                        <i class="fa-brands fa-twitter center-flex c-gray"></i>
+                        <input type="text" class="w-full" placeholder="twitter username">
+                    </div>
+                    
+                    <div class="d-flex align-center mb-15">
+                        <i class="fa-brands fa-facebook center-flex c-gray"></i>
+                        <input type="text" class="w-full" placeholder="twitter username">
+                    </div>
+                    <div class="d-flex align-center mb-15">
+                        <i class="fa-brands fa-linkedin center-flex c-gray"></i>
+                        <input type="text" class="w-full" placeholder="twitter username">
+                    </div>
+                    <div class="d-flex align-center mb-15">
+                        <i class="fa-brands fa-youtube center-flex c-gray"></i>
+                        <input type="text" class="w-full" placeholder="twitter username">
+                    </div>
+
+                </div>
+
+
+                <div class="widgets-controle p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-20">widgets-controle</h2>
+                    <p class="mt-0 mb-20 c-gray fs-15"> Show /wide widgets</p>
+                    <div class="d-flex align-center mb-15 controle">
+                        <input type="checkbox" checked id="one">
+                        <label for="one">Quick draft</label>
+                    </div>
+                    <div class="d-flex align-center mb-15 controle">
+                        <input type="checkbox" checked id="two">
+                        <label for="two">Yearly target</label>
+                    </div>
+                    <div class="d-flex align-center mb-15 controle">
+                        <input type="checkbox" id="there">
+                        <label for="there">Tickets statistique</label>
+                    </div>
+                    <div class="d-flex align-center mb-15 controle">
+                        <input type="checkbox" checked id="four">
+                        <label for="four">Latest news</label>
+                    </div>
+                    <div class="d-flex align-center mb-15 controle">
+                        <input type="checkbox" checked id="six">
+                        <label for="six">Latest tasks</label>
+                    </div>
+
+                </div>
+
+                <div class="backup-controle p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-20">Backup manager</h2>
+                    <p class="mt-0 mb-20 c-gray fs-15"> Controle backup time and location</p>
+                    <div class="date d-flex align-center mb-15 controle">
+                        <input type="radio"  id="">
+                        <label for="Daily">Daily</label>
+                    </div>
+
+                    <div class="date d-flex align-center mb-15 controle">
+                        <input type="radio"  id="">
+                        <label for="Weekly">Weekly</label>
+                    </div>
+
+                    <div class="date d-flex align-center mb-15 controle">
+                        <input type="radio"  id="">
+                        <label for="Monthly">Monthly</label>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- <div class="setting-page">
+                <label>
+                    <input type="checkbox" checked class="toggle-checkbox" id="">
+                    <div class="toggle-switch"></div>
+                </label>
+            </div> -->
         </div>
     </div>
 </body>
