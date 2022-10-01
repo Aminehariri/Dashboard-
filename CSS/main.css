@@ -591,3 +591,49 @@ ul{
     transition: .4s;
     transform: scale(0);
 }
+
+/* profile page  */
+.profile-page .avatar-box{
+    width: 300px;
+    border-right: 1px solid #eee;
+}
+@media(min-width:767px){
+    .profile-page .avatar-box{
+        border-right: 1px solid #eee;
+    }
+}
+@media(max-width:767px){
+    .profile-page .overview{
+        flex-direction: column;
+    }
+}
+.profile-page .avatar-box >img{
+    width: 120px;
+    height: 120px;
+}
+.profile-page .avatar-box .level{
+    height: 5px;
+    overflow: hidden;
+    margin: auto;
+    width: 70%;
+}
+.profile-page .avatar-box .level span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--blue-color);
+    border-radius: 5px;
+}
+.profile-page .info-box .box{
+    flex-wrap: wrap;
+    border-bottom: 1px solid #eee;
+    transition: .5s;
+}
+.profile-page .info-box .box > div{
+    min-width: 250px;
+    padding: 10px 0 0;
+}
+.profile-page .info-box .box h4{
+    font-weight: normal;
+}
